@@ -30,7 +30,7 @@ redis==2.2.4
 sorl-thumbnail==11.05.2
 icalendar==2.2
 PIL==1.1.7
-psycopg2==2.4.4
+#psycopg2==2.4.4
 gondor==1.0.1
 mailout==1.0a1.dev2
 markdown==2.0.3
