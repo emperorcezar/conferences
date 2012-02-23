@@ -2,3 +2,4 @@ local_settings.py
 dev.db
 .epio-app
 *.pyc
+static
