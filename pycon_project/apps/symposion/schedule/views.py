@@ -530,7 +530,7 @@ def schedule_json(request):
                 "license": "",
                 "conf_url": "",
                 "conf_key": "",
-                "released": True,
+                "released": all([s.release for s in slot.presentation.speakers()]),
                 "start_iso": slot.start.isoformat(),
                 "end_iso": slot.end.isoformat(),
                 "authors": ", ".join(map(

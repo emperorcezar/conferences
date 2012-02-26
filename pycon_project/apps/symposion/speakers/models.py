@@ -38,6 +38,9 @@ class Speaker(models.Model):
         help_text="If you've submitted multiple proposals, please let us know if you only want to give one or if you'd like to give two talks. You may submit more than two proposals."
     )
     
+    # Video release
+    release = models.BooleanField(default = False, help_text ="I agree to be recorded and put on the internets")
+     
     def __unicode__(self):
         if self.user:
             return self.name
